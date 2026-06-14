@@ -8,8 +8,6 @@ import volume from "@/assets/volume.jpg.asset.json";
 import wetEffect from "@/assets/wet-effect.jpg.asset.json";
 import browLam from "@/assets/brow-lamination.jpg.asset.json";
 
-const lashesNatural = lightVolume;
-const lashesCateye = volume;
 
 export type ServiceCategory = "nails" | "pedicure" | "lashes" | "brows";
 
