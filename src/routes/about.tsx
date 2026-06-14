@@ -19,7 +19,7 @@ function About() {
           <div className="lg:col-span-5 relative">
             <div className="relative skeu-card rounded-[2.5rem] p-3 max-w-md mx-auto">
               <div className="aspect-[4/5] rounded-[2rem] overflow-hidden">
-                <img src={portrait.url} alt="Magda Maie Ibarra" className="w-full h-full object-cover" />
+                <img src={portrait.url} alt="Maie Ibarra" className="w-full h-full object-cover" />
               </div>
               <Sparkle className="absolute -bottom-4 -left-4" size={36} />
             </div>
@@ -30,7 +30,7 @@ function About() {
           <Reveal><SectionEyebrow>{t("about.eyebrow")}</SectionEyebrow></Reveal>
           <Reveal delay={0.1}>
             <h1 className="mt-6 font-display text-6xl lg:text-8xl leading-[0.95]">
-              <span className="italic font-light">Magda</span>
+              <span className="italic font-light">Maie</span>
               <span className="block gradient-text">Ibarra</span>
             </h1>
           </Reveal>
