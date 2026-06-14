@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { useLang } from "@/lib/i18n";
 import { FloatingOrbs, Reveal, SectionEyebrow, Sparkle } from "@/components/Luxe";
-import portrait from "@/assets/maie-portrait.jpg.asset.json";
+import portrait from "@/assets/maie-portrait-new.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({ meta: [{ title: "Sobre Mi · Maie Ibarra" }] }),
