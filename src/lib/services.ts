@@ -2,8 +2,14 @@ import nailsHorror from "@/assets/nails-horror.jpg.asset.json";
 import nailsFloral from "@/assets/nails-floral.jpg.asset.json";
 import nailsGold from "@/assets/nails-gold.jpg.asset.json";
 import pedicure from "@/assets/pedicure.jpg.asset.json";
-import lashesNatural from "@/assets/lashes-natural.jpg.asset.json";
-import lashesCateye from "@/assets/lashes-cateye.jpg.asset.json";
+import lashLift from "@/assets/lash-lift.jpg.asset.json";
+import lightVolume from "@/assets/light-volume.jpg.asset.json";
+import volume from "@/assets/volume.jpg.asset.json";
+import wetEffect from "@/assets/wet-effect.jpg.asset.json";
+import browLam from "@/assets/brow-lamination.jpg.asset.json";
+
+const lashesNatural = lightVolume;
+const lashesCateye = volume;
 
 export type ServiceCategory = "nails" | "pedicure" | "lashes" | "brows";
 
