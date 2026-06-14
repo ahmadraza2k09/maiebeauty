@@ -79,7 +79,7 @@ export const services: Service[] = [
     name: { es: "Classic Lashes", en: "Classic Lashes" },
     description: { es: "Una extensión por pestaña, efecto natural y elegante.", en: "One extension per lash, natural and elegant effect." },
     price: 80,
-    image: lashesNatural.url,
+    image: lightVolume.url,
     variants: [
       { label: { es: "Aplicación", en: "Full set" }, price: 80 },
       { label: { es: "Relleno 2 semanas", en: "Fill 2 weeks" }, price: 40 },
@@ -92,7 +92,7 @@ export const services: Service[] = [
     name: { es: "Hybrid Lashes", en: "Hybrid Lashes" },
     description: { es: "Mezcla de classic y volumen para densidad balanceada.", en: "Mix of classic and volume for balanced density." },
     price: 100,
-    image: lashesCateye.url,
+    image: volume.url,
     variants: [
       { label: { es: "Aplicación", en: "Full set" }, price: 100 },
       { label: { es: "Relleno 2 semanas", en: "Fill 2 weeks" }, price: 50 },
@@ -105,7 +105,7 @@ export const services: Service[] = [
     name: { es: "Wet Effect", en: "Wet Effect" },
     description: { es: "Pestañas mojadas, look glossy y moderno.", en: "Wet lash look, glossy and modern." },
     price: 100,
-    image: lashesNatural.url,
+    image: wetEffect.url,
     variants: [
       { label: { es: "Aplicación", en: "Full set" }, price: 100 },
       { label: { es: "Relleno 2 semanas", en: "Fill 2 weeks" }, price: 50 },
@@ -118,7 +118,7 @@ export const services: Service[] = [
     name: { es: "Light Volume", en: "Light Volume" },
     description: { es: "Volumen sutil, ligero y dramático a la vez.", en: "Subtle volume, light and dramatic at once." },
     price: 120,
-    image: lashesCateye.url,
+    image: lightVolume.url,
     variants: [
       { label: { es: "Aplicación", en: "Full set" }, price: 120 },
       { label: { es: "Relleno 2 semanas", en: "Fill 2 weeks" }, price: 60 },
@@ -131,7 +131,7 @@ export const services: Service[] = [
     name: { es: "Volume Lashes", en: "Volume Lashes" },
     description: { es: "Máximo impacto con abanicos hechos a mano.", en: "Maximum impact with handmade fans." },
     price: 130,
-    image: lashesCateye.url,
+    image: volume.url,
     variants: [
       { label: { es: "Aplicación", en: "Full set" }, price: 130 },
       { label: { es: "Relleno 2 semanas", en: "Fill 2 weeks" }, price: 65 },
@@ -144,7 +144,7 @@ export const services: Service[] = [
     name: { es: "Lash Lift", en: "Lash Lift" },
     description: { es: "Levantamiento natural de tus propias pestañas.", en: "Natural lift of your own lashes." },
     price: 45,
-    image: lashesNatural.url,
+    image: lashLift.url,
     variants: [
       { label: { es: "Lash Lift", en: "Lash Lift" }, price: 45 },
       { label: { es: "Lash Lift más Tinte", en: "Lash Lift plus Tint" }, price: 60 },
@@ -156,7 +156,7 @@ export const services: Service[] = [
     name: { es: "Laminado de Cejas", en: "Brow Lamination" },
     description: { es: "Cejas peinadas, abundantes y editoriales.", en: "Brushed up, full and editorial brows." },
     price: 30,
-    image: lashesNatural.url,
+    image: browLam.url,
     variants: [
       { label: { es: "Laminado", en: "Lamination" }, price: 30 },
       { label: { es: "Laminado más Tinte", en: "Lamination plus Tint" }, price: 45 },
