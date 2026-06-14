@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { useLang } from "@/lib/i18n";
 import { FloatingOrbs, Reveal, SectionEyebrow, Sparkle } from "@/components/Luxe";
-import portrait from "@/assets/portrait.jpg.asset.json";
+import portrait from "@/assets/maie-portrait.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({ meta: [{ title: "Sobre Mi · Maie Ibarra" }] }),
@@ -21,20 +21,6 @@ function About() {
               <div className="aspect-[4/5] rounded-[2rem] overflow-hidden">
                 <img src={portrait.url} alt="Magda Maie Ibarra" className="w-full h-full object-cover" />
               </div>
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                className="absolute -top-8 -right-8 w-32 h-32"
-              >
-                <svg viewBox="0 0 200 200" className="w-full h-full">
-                  <defs>
-                    <path id="cir" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
-                  </defs>
-                  <text className="text-[14px] uppercase tracking-[0.3em] fill-primary font-medium">
-                    <textPath href="#cir">Maie Ibarra · Beauty Studio · Texas · </textPath>
-                  </text>
-                </svg>
-              </motion.div>
               <Sparkle className="absolute -bottom-4 -left-4" size={36} />
             </div>
           </div>

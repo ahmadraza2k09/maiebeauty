@@ -2,7 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useLang } from "@/lib/i18n";
-import logoWhite from "@/assets/logo-white.png.asset.json";
+import logoWhite from "@/assets/maie-logo.png.asset.json";
 import { Menu, X } from "lucide-react";
 
 const links = [
@@ -44,7 +44,7 @@ export function Navigation() {
           scrolled ? "glass-lavender shadow-soft" : "bg-transparent"
         }`}>
           <Link to="/" className="flex items-center gap-3 group">
-            <img src={logoWhite.url} alt="Maie Ibarra" className="h-9 lg:h-10 w-auto transition-transform group-hover:scale-105" />
+            <img src={logoWhite.url} alt="Maie Ibarra" className="h-14 lg:h-16 w-auto object-contain transition-transform group-hover:scale-105" />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1">

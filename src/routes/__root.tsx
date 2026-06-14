@@ -14,7 +14,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { LanguageProvider } from "../lib/i18n";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
-import { WhatsAppFloat } from "../components/WhatsAppFloat";
+
 import logoBlack from "../assets/logo-black.png.asset.json";
 
 function NotFoundComponent() {
@@ -97,7 +97,7 @@ function RootComponent() {
             <Outlet />
           </main>
           <Footer />
-          <WhatsAppFloat />
+          
         </div>
       </LanguageProvider>
     </QueryClientProvider>
