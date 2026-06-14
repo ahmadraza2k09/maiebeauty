@@ -89,17 +89,6 @@ function Home() {
             >
               <img src={nailsGold.url} alt="Luxury nails" className="w-full h-full object-cover rounded-[1.7rem]" />
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 1 }}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full glass-lavender flex items-center justify-center text-center"
-            >
-              <div>
-                <div className="font-display text-3xl gradient-text">Maie</div>
-                <div className="text-[10px] uppercase tracking-[0.3em] text-foreground/60 mt-1">Beauty Studio</div>
-              </div>
-            </motion.div>
           </motion.div>
         </motion.div>
 
@@ -177,30 +166,6 @@ function Home() {
         </div>
       </section>
 
-      {/* GALLERY */}
-      <section className="relative py-24 px-6 lg:px-10 overflow-hidden">
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-16">
-            <Reveal><SectionEyebrow>02 · Portfolio</SectionEyebrow></Reveal>
-            <Reveal delay={0.1}><h2 className="mt-6 font-display text-5xl lg:text-6xl">{t("home.gallery.title")}</h2></Reveal>
-            <Reveal delay={0.2}><p className="mt-4 text-foreground/70">{t("home.gallery.sub")}</p></Reveal>
-          </div>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
-            {gallery.map((src, i) => (
-              <Reveal key={src + i} delay={i * 0.06}>
-                <motion.div
-                  whileHover={{ scale: 1.03 }}
-                  className={`relative overflow-hidden rounded-[1.5rem] shadow-soft ${i % 5 === 0 ? "lg:col-span-2 lg:row-span-2 aspect-square" : "aspect-[3/4]"}`}
-                >
-                  <img src={src} alt="" className="w-full h-full object-cover transition-transform duration-[1500ms] hover:scale-110" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
-                </motion.div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* FINAL CTA */}
       <section className="relative py-32 px-6 lg:px-10">
