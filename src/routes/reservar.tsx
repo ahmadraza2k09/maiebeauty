@@ -34,6 +34,11 @@ function Reserve() {
   const [err, setErr] = useState<string | null>(null);
 
   useEffect(() => { if (presel) setServiceId(presel); }, [presel]);
+  
+  // Scroll to top when step changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [step]);
 
   const service = useMemo(() => services.find((s) => s.id === serviceId) ?? null, [serviceId]);
 

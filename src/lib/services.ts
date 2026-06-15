@@ -1,6 +1,7 @@
 import nailsHorror from "@/assets/nails-horror.jpg";
 import nailsFloral from "@/assets/nails-floral.jpg";
 import nailsGold from "@/assets/nails-gold.jpg";
+import dualSystemImg from "../../assets/dual-system.jfif";
 import nailArtImg from "../../assets/nail-art.jfif";
 import pedicure from "@/assets/pedicure.jpg";
 import lashLift from "@/assets/lash-lift.jpg";
@@ -48,7 +49,7 @@ export const services: Service[] = [
     name: { es: "Dual System", en: "Dual System" },
     description: { es: "Extensiones esculpidas con acabado de cristal.", en: "Sculpted extensions with a crystal finish." },
     price: 50,
-    image: nailsFloral,
+    image: dualSystemImg,
   },
   {
     id: "designs",
