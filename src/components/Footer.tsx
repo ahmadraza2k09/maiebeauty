@@ -2,7 +2,9 @@ import { Link } from "@tanstack/react-router";
 import { useLang } from "@/lib/i18n";
 import { INSTAGRAM, WHATSAPP } from "@/lib/services";
 import logoPlain from "@/assets/logo-plain.png.asset.json";
-import { Instagram, MessageCircle } from "lucide-react";
+import { Instagram, MessageCircle, Facebook } from "lucide-react";
+
+const FACEBOOK = "https://www.facebook.com/maienails";
 
 export function Footer() {
   const { t } = useLang();
@@ -19,7 +21,10 @@ export function Footer() {
               <a href={INSTAGRAM} target="_blank" rel="noreferrer" className="w-11 h-11 rounded-full glass-lavender flex items-center justify-center hover:scale-110 transition-transform">
                 <Instagram className="w-4 h-4 text-primary" />
               </a>
-              <a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noreferrer" className="w-11 h-11 rounded-full glass-lavender flex items-center justify-center hover:scale-110 transition-transform">
+              <a href={FACEBOOK} target="_blank" rel="noreferrer" aria-label="Facebook" className="w-11 h-11 rounded-full glass-lavender flex items-center justify-center hover:scale-110 transition-transform">
+                <Facebook className="w-4 h-4 text-primary" />
+              </a>
+              <a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noreferrer" aria-label="WhatsApp" className="w-11 h-11 rounded-full glass-lavender flex items-center justify-center hover:scale-110 transition-transform">
                 <MessageCircle className="w-4 h-4 text-primary" />
               </a>
             </div>
@@ -39,7 +44,8 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-foreground/80">
               <li>WhatsApp · +1 (903) 921 4854</li>
               <li>Texas, USA</li>
-              <li><a href={INSTAGRAM} target="_blank" rel="noreferrer" className="hover:text-primary">@maie.beautymx</a></li>
+              <li><a href={INSTAGRAM} target="_blank" rel="noreferrer" className="hover:text-primary">Instagram · @maie.beautymx</a></li>
+              <li><a href={FACEBOOK} target="_blank" rel="noreferrer" className="hover:text-primary">Facebook · maienails</a></li>
             </ul>
           </div>
         </div>

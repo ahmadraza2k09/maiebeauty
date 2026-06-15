@@ -44,17 +44,29 @@ export const dict: Dict = {
   "about.title": { es: "Magda Ibarra", en: "Magda Ibarra" },
   "about.subtitle": { es: "Artista de belleza · Texas, USA", en: "Beauty artist · Texas, USA" },
   "about.bio1": {
-    es: "Soy Magda, o Maie como me conocen mis clientas. Detrás de esta cuenta hay una mujer obsesionada con el detalle, la higiene y la belleza que se siente tan bien como se ve.",
-    en: "I am Magda, or Maie as my clients know me. Behind this account is a woman obsessed with detail, hygiene and beauty that feels as good as it looks.",
+    es: "Hola, soy Magda, apasionada por la belleza y el cuidado personal. Mi objetivo es ayudarte a sentirte segura, hermosa y consentida en cada visita.",
+    en: "Hi, I am Magda, passionate about beauty and personal care. My goal is to help you feel confident, beautiful and pampered on every visit.",
   },
   "about.bio2": {
-    es: "Trabajo con productos premium y técnicas que respetan tu uña natural, tus pestañas y tu piel. Cada cita es un espacio íntimo donde el tiempo se detiene.",
-    en: "I work with premium products and techniques that respect your natural nail, your lashes and your skin. Each appointment is an intimate space where time stops.",
+    es: "Me especializo en servicios de uñas, pedicure, extensiones de pestañas y diseño de cejas, siempre cuidando cada detalle para brindarte resultados de calidad.",
+    en: "I specialize in nails, pedicure, lash extensions and brow design, always caring for every detail to deliver quality results.",
   },
-  "about.exp.title": { es: "Experiencia", en: "Experience" },
-  "about.exp.body": { es: "Más de cinco años especializada en uñas esculpidas, extensiones de pestañas y laminado de cejas.", en: "Over five years specialized in sculpted nails, lash extensions and brow lamination." },
+  "about.bio3": {
+    es: "Creo que la belleza está en los pequeños detalles, por eso me esfuerzo en ofrecer un ambiente cómodo, limpio y relajante donde cada cliente reciba una atención personalizada.",
+    en: "I believe beauty lives in the small details, which is why I strive to offer a comfortable, clean and relaxing space where every client receives personalized care.",
+  },
+  "about.bio4": {
+    es: "Ya sea que busques un diseño de uñas único, unas pestañas que resalten tu mirada o unas cejas perfectamente definidas, estoy aquí para ayudarte a lucir y sentirte increíble.",
+    en: "Whether you are looking for a unique nail design, lashes that highlight your eyes or perfectly defined brows, I am here to help you look and feel incredible.",
+  },
+  "about.bio5": {
+    es: "Gracias por confiar en mi trabajo. Será un placer atenderte.",
+    en: "Thank you for trusting my work. It will be my pleasure to serve you.",
+  },
+  "about.exp.title": { es: "Especialidades", en: "Specialties" },
+  "about.exp.body": { es: "Uñas, pedicure, extensiones de pestañas y diseño de cejas con técnica y detalle.", en: "Nails, pedicure, lash extensions and brow design with skill and detail." },
   "about.phil.title": { es: "Filosofía", en: "Philosophy" },
-  "about.phil.body": { es: "Belleza limpia, duradera y personalizada. Sin atajos.", en: "Clean, lasting and personalized beauty. No shortcuts." },
+  "about.phil.body": { es: "La belleza está en los pequeños detalles. Atención personalizada en cada visita.", en: "Beauty lives in the small details. Personalized care on every visit." },
 
   "services.eyebrow": { es: "Servicios", en: "Services" },
   "services.title": { es: "El Menú Completo", en: "The Full Menu" },

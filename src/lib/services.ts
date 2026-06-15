@@ -4,8 +4,8 @@ import nailsGold from "@/assets/nails-gold.jpg.asset.json";
 import pedicure from "@/assets/pedicure.jpg.asset.json";
 import lashLift from "@/assets/lash-lift.jpg.asset.json";
 import lightVolume from "@/assets/light-volume.jpg.asset.json";
-import volume from "@/assets/volume.jpg.asset.json";
-import wetEffect from "@/assets/wet-effect.jpg.asset.json";
+import volume from "@/assets/volumen-new.jpg.asset.json";
+import wetEffect from "@/assets/wet-effect-new.jpg.asset.json";
 import browLam from "@/assets/brow-lamination.jpg.asset.json";
 
 
