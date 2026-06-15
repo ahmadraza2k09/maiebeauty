@@ -14,7 +14,8 @@ import { LanguageProvider } from "../lib/i18n";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 
-import logoBlack from "../assets/logo-black.png.asset.json";
+import logoBlack from "../assets/logo-black.png";
+import previewImage from "../assets/about-maie-final.jpg";
 
 function NotFoundComponent() {
   return (
@@ -59,13 +60,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Maie Ibarra · Luxury Beauty Studio" },
       { name: "twitter:description", content: "Estudio de belleza premium en Texas. Builder Gel, Dual System, Pedicure, Lashes, Lash Lifting y Laminado de Cejas." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4b368c58-992f-49d6-a434-688402bc971b/id-preview-f0e2b3c5--eae7636d-c9ad-4caa-923f-1302c34eed53.lovable.app-1781459835272.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4b368c58-992f-49d6-a434-688402bc971b/id-preview-f0e2b3c5--eae7636d-c9ad-4caa-923f-1302c34eed53.lovable.app-1781459835272.png" },
+      { property: "og:image", content: previewImage },
+      { name: "twitter:image", content: previewImage },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/png", href: logoBlack.url },
-      { rel: "apple-touch-icon", href: logoBlack.url },
+      { rel: "icon", type: "image/png", href: logoBlack },
+      { rel: "apple-touch-icon", href: logoBlack },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" },

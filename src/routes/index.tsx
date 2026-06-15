@@ -4,11 +4,11 @@ import { useRef, useState } from "react";
 import { useLang } from "@/lib/i18n";
 import { services } from "@/lib/services";
 import { FloatingOrbs, Reveal, SectionEyebrow, Sparkle } from "@/components/Luxe";
-import nailsGold from "@/assets/nails-gold.jpg.asset.json";
-import volume from "@/assets/volume.jpg.asset.json";
-import wetEffect from "@/assets/wet-effect.jpg.asset.json";
-import lashLift from "@/assets/lash-lift.jpg.asset.json";
-import whyMaiePortrait from "@/assets/why-maie-portrait.jpg.asset.json";
+import nailsGold from "@/assets/nails-gold.jpg";
+import volume from "@/assets/volume.jpg";
+import wetEffect from "@/assets/wet-effect.jpg";
+import lashLift from "@/assets/lash-lift.jpg";
+import whyMaiePortrait from "@/assets/why-maie-portrait.jpg";
 import { Plus, Minus, Star, Sparkles, ShieldCheck, Heart, Clock } from "lucide-react";
 
 export const Route = createFileRoute("/")({ component: Home });
@@ -91,7 +91,7 @@ function Home() {
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
               className="absolute top-0 right-0 w-64 lg:w-80 aspect-[3/4] rounded-[2rem] overflow-hidden shadow-luxury skeu-card p-2"
             >
-              <img src={volume.url} alt="Volume lashes" className="w-full h-full object-cover rounded-[1.7rem]" />
+              <img src={volume} alt="Volume lashes" className="w-full h-full object-cover rounded-[1.7rem]" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.9, rotate: 8 }}
@@ -99,7 +99,7 @@ function Home() {
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.5 }}
               className="absolute bottom-0 left-0 w-56 lg:w-72 aspect-[3/4] rounded-[2rem] overflow-hidden shadow-luxury skeu-card p-2 animate-float"
             >
-              <img src={nailsGold.url} alt="Luxury nails" className="w-full h-full object-cover rounded-[1.7rem]" />
+              <img src={nailsGold} alt="Luxury nails" className="w-full h-full object-cover rounded-[1.7rem]" />
             </motion.div>
           </motion.div>
         </motion.div>
@@ -205,7 +205,7 @@ function Home() {
           <div className="lg:col-span-5 relative h-[460px]">
             <Reveal>
               <div className="absolute inset-0 skeu-card rounded-[2.5rem] p-3 rotate-[-3deg]">
-                <img src={whyMaiePortrait.url} alt="Maie Ibarra" className="w-full h-full object-cover rounded-[2rem]" />
+                <img src={whyMaiePortrait} alt="Maie Ibarra" className="w-full h-full object-cover rounded-[2rem]" />
               </div>
             </Reveal>
             <Sparkle className="absolute -top-4 -right-4" size={40} />

@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { useLang } from "@/lib/i18n";
 import { FloatingOrbs, Reveal, SectionEyebrow, Sparkle } from "@/components/Luxe";
-import portrait from "@/assets/about-maie-final.jpg.asset.json";
+import portrait from "@/assets/about-maie-final.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({ meta: [{ title: "Sobre Mi · Maie Ibarra" }] }),
@@ -44,7 +44,7 @@ function About() {
             >
               <div className="aspect-[4/5] rounded-[2rem] overflow-hidden">
                 <motion.img
-                  src={portrait.url}
+                  src={portrait}
                   alt="Maie Ibarra"
                   loading="eager"
                   className="w-full h-full object-cover object-center"

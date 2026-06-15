@@ -1,14 +1,14 @@
-import nailsHorror from "@/assets/nails-horror.jpg.asset.json";
-import nailsFloral from "@/assets/nails-floral.jpg.asset.json";
-import nailsGold from "@/assets/nails-gold.jpg.asset.json";
-import pedicure from "@/assets/pedicure.jpg.asset.json";
-import lashLift from "@/assets/lash-lift.jpg.asset.json";
-import lightVolume from "@/assets/light-volume.jpg.asset.json";
-import volume from "@/assets/volumen-new.jpg.asset.json";
-import wetEffect from "@/assets/wet-effect-new.jpg.asset.json";
-import browLam from "@/assets/brow-lamination.jpg.asset.json";
-import classicLashes from "@/assets/classic-lashes.jpg.asset.json";
-import hybridsLashes from "@/assets/hybrids-lashes.jpg.asset.json";
+import nailsHorror from "@/assets/nails-horror.jpg";
+import nailsFloral from "@/assets/nails-floral.jpg";
+import nailsGold from "@/assets/nails-gold.jpg";
+import pedicure from "@/assets/pedicure.jpg";
+import lashLift from "@/assets/lash-lift.jpg";
+import lightVolume from "@/assets/light-volume.jpg";
+import volume from "@/assets/volumen-new.jpg";
+import wetEffect from "@/assets/wet-effect-new.jpg";
+import browLam from "@/assets/brow-lamination.jpg";
+import classicLashes from "@/assets/classic-lashes.jpg";
+import hybridsLashes from "@/assets/hybrids-lashes.jpg";
 
 
 export type ServiceCategory = "nails" | "pedicure" | "lashes" | "brows";
@@ -28,9 +28,12 @@ export const services: Service[] = [
     id: "builder-gel",
     category: "nails",
     name: { es: "Builder Gel", en: "Builder Gel" },
-    description: { es: "Refuerzo natural sobre tu uña, ligero y duradero.", en: "Natural reinforcement on your nail, light and lasting." },
+    description: {
+      es: "Builder Gel fortalece y niveliza la uña natural para un acabado elegante y duradero.",
+      en: "Builder Gel strengthens and levels the natural nail for an elegant, long-lasting finish.",
+    },
     price: 40,
-    image: nailsGold.url,
+    image: nailsGold,
     variants: [
       { label: { es: "Sobre uña natural", en: "On natural nail" }, price: 40 },
       { label: { es: "Corta", en: "Short" }, price: 50 },
@@ -44,7 +47,7 @@ export const services: Service[] = [
     name: { es: "Dual System", en: "Dual System" },
     description: { es: "Extensiones esculpidas con acabado de cristal.", en: "Sculpted extensions with a crystal finish." },
     price: 50,
-    image: nailsFloral.url,
+    image: nailsFloral,
   },
   {
     id: "designs",
@@ -52,7 +55,7 @@ export const services: Service[] = [
     name: { es: "Diseños", en: "Nail Art" },
     description: { es: "Desde básicos hasta arte editorial sobre tus uñas.", en: "From basic to editorial art on your nails." },
     price: 10,
-    image: nailsHorror.url,
+    image: nailsHorror,
     variants: [
       { label: { es: "Básico", en: "Basic" }, price: "10–15" },
       { label: { es: "Medio", en: "Medium" }, price: "20–25" },
@@ -62,10 +65,13 @@ export const services: Service[] = [
   {
     id: "pedicure",
     category: "pedicure",
-    name: { es: "Pedicura Rusa", en: "Russian Pedicure" },
-    description: { es: "Limpieza profunda de talón, exfoliación, hidratación y gel a un color.", en: "Deep heel cleansing, exfoliation, hydration and one color gel." },
+    name: { es: "Pedicura", en: "Pedicure" },
+    description: {
+      es: "Tratamiento de pies con limpieza, corte y limado de uñas, cuidado de cutículas, exfoliación e hidratación para pies renovados.",
+      en: "Foot care and beauty treatment with cleaning, nail trimming and shaping, cuticle care, exfoliation, and hydration for refreshed, healthy feet.",
+    },
     price: 65,
-    image: pedicure.url,
+    image: pedicure,
     variants: [
       { label: { es: "Pedicura completa", en: "Full pedicure" }, price: 65 },
       { label: { es: "Cuadratura de uñas", en: "Square shaping" }, price: 10 },
@@ -76,10 +82,13 @@ export const services: Service[] = [
   {
     id: "classic-lashes",
     category: "lashes",
-    name: { es: "Classic Lashes", en: "Classic Lashes" },
-    description: { es: "Una extensión por pestaña, efecto natural y elegante.", en: "One extension per lash, natural and elegant effect." },
+    name: { es: "Classic Lashes", en: "Classic Lash Extensions" },
+    description: {
+      es: "La técnica classic aplica una extensión a cada pestaña natural (1:1). Ideal para un look elegante y natural con mayor largo.",
+      en: "The classic technique applies one extension to each natural lash (1:1). Ideal for a natural, elegant look with added length.",
+    },
     price: 80,
-    image: classicLashes.url,
+    image: classicLashes,
     variants: [
       { label: { es: "Aplicación", en: "Full set" }, price: 80 },
       { label: { es: "Relleno 2 semanas", en: "Fill 2 weeks" }, price: 40 },
@@ -89,10 +98,13 @@ export const services: Service[] = [
   {
     id: "hybrid-lashes",
     category: "lashes",
-    name: { es: "Hybrid Lashes", en: "Hybrid Lashes" },
-    description: { es: "Mezcla de classic y volumen para densidad balanceada.", en: "Mix of classic and volume for balanced density." },
+    name: { es: "Hybrid Lashes", en: "Hybrid Lash Extensions" },
+    description: {
+      es: "La técnica hybrid combina classic y volume para un resultado más definido, con densidad y un balance entre natural y glamour.",
+      en: "The hybrid technique combines classic and volume lashes for a fuller, more defined effect that balances natural beauty and glamour.",
+    },
     price: 100,
-    image: hybridsLashes.url,
+    image: hybridsLashes,
     variants: [
       { label: { es: "Aplicación", en: "Full set" }, price: 100 },
       { label: { es: "Relleno 2 semanas", en: "Fill 2 weeks" }, price: 50 },
@@ -105,7 +117,7 @@ export const services: Service[] = [
     name: { es: "Wet Effect", en: "Wet Effect" },
     description: { es: "Pestañas mojadas, look glossy y moderno.", en: "Wet lash look, glossy and modern." },
     price: 100,
-    image: wetEffect.url,
+    image: wetEffect,
     variants: [
       { label: { es: "Aplicación", en: "Full set" }, price: 100 },
       { label: { es: "Relleno 2 semanas", en: "Fill 2 weeks" }, price: 50 },
@@ -118,7 +130,7 @@ export const services: Service[] = [
     name: { es: "Light Volume", en: "Light Volume" },
     description: { es: "Volumen sutil, ligero y dramático a la vez.", en: "Subtle volume, light and dramatic at once." },
     price: 120,
-    image: lightVolume.url,
+    image: lightVolume,
     variants: [
       { label: { es: "Aplicación", en: "Full set" }, price: 120 },
       { label: { es: "Relleno 2 semanas", en: "Fill 2 weeks" }, price: 60 },
@@ -128,10 +140,13 @@ export const services: Service[] = [
   {
     id: "volume",
     category: "lashes",
-    name: { es: "Volume Lashes", en: "Volume Lashes" },
-    description: { es: "Máximo impacto con abanicos hechos a mano.", en: "Maximum impact with handmade fans." },
+    name: { es: "Volume Lashes", en: "Volume Lash Extensions" },
+    description: {
+      es: "La técnica volume usa abanicos ultraligeros aplicados a cada pestaña natural para mayor densidad, profundidad y un look sofisticado.",
+      en: "The volume technique uses ultra-light lash fans applied to each natural lash for greater density, depth, and a dramatic look.",
+    },
     price: 130,
-    image: volume.url,
+    image: volume,
     variants: [
       { label: { es: "Aplicación", en: "Full set" }, price: 130 },
       { label: { es: "Relleno 2 semanas", en: "Fill 2 weeks" }, price: 65 },
@@ -142,9 +157,12 @@ export const services: Service[] = [
     id: "lash-lift",
     category: "lashes",
     name: { es: "Lash Lift", en: "Lash Lift" },
-    description: { es: "Levantamiento natural de tus propias pestañas.", en: "Natural lift of your own lashes." },
+    description: {
+      es: "Tratamiento que eleva y curva las pestañas desde la raíz, creando una apariencia más larga y definida. Resultados de 6 a 8 semanas.",
+      en: "A treatment that lifts and curls natural lashes from the root, creating a longer, more defined appearance. Results last 6 to 8 weeks.",
+    },
     price: 45,
-    image: lashLift.url,
+    image: lashLift,
     variants: [
       { label: { es: "Lash Lift", en: "Lash Lift" }, price: 45 },
       { label: { es: "Lash Lift más Tinte", en: "Lash Lift plus Tint" }, price: 60 },
@@ -154,9 +172,12 @@ export const services: Service[] = [
     id: "brow-lam",
     category: "brows",
     name: { es: "Laminado de Cejas", en: "Brow Lamination" },
-    description: { es: "Cejas peinadas, abundantes y editoriales.", en: "Brushed up, full and editorial brows." },
+    description: {
+      es: "El laminado de cejas alinea y fija los vellos en la dirección deseada para una apariencia más llena, definida y pulida.",
+      en: "Brow lamination aligns and sets hairs in the desired direction for a fuller, more defined, neatly groomed brow look.",
+    },
     price: 30,
-    image: browLam.url,
+    image: browLam,
     variants: [
       { label: { es: "Laminado", en: "Lamination" }, price: 30 },
       { label: { es: "Laminado más Tinte", en: "Lamination plus Tint" }, price: 45 },

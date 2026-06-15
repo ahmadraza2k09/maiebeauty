@@ -15,7 +15,7 @@ export const Route = createFileRoute("/reservar")({
   component: Reserve,
 });
 
-const TIMES = ["10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM", "6:00 PM"];
+const TIMES = ["8:00 AM", "10:15 AM", "12:30 PM"];
 
 const dataSchema = z.object({
   name: z.string().trim().min(2).max(80),
@@ -122,6 +122,7 @@ function Reserve() {
               {step === 1 && (
                 <div>
                   <h2 className="font-display text-3xl lg:text-4xl mb-2">{t("reserve.s2.title")}</h2>
+                  <p className="text-foreground/60 text-sm mb-2">{lang === "es" ? "Citas disponibles solo de lunes a viernes en las mañanas." : "Available Monday through Friday mornings only."}</p>
                   <p className="text-foreground/60 text-sm mb-8">{t("reserve.step")} 2 {t("reserve.of")} 4</p>
                   <div className="grid lg:grid-cols-2 gap-8">
                     <div>
@@ -257,7 +258,8 @@ function Calendar({ selected, onSelect, lang }: { selected: Date | null; onSelec
       <div className="grid grid-cols-7 gap-1">
         {cells.map((d, i) => {
           if (!d) return <div key={i} />;
-          const disabled = d < today;
+          const disabled = d < today || d.getDay() === 0 || d.getDay() === 6; // only Monday-Friday
+
           const active = selected && d.toDateString() === selected.toDateString();
           return (
             <button

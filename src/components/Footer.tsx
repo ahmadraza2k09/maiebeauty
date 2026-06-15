@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useLang } from "@/lib/i18n";
 import { INSTAGRAM, WHATSAPP } from "@/lib/services";
-import logoPlain from "@/assets/logo-plain.png.asset.json";
+import logoPlain from "@/assets/logo-plain.png";
 import { Instagram, MessageCircle, Facebook } from "lucide-react";
 
 const FACEBOOK = "https://www.facebook.com/maienails";
@@ -15,7 +15,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid lg:grid-cols-3 gap-12 items-start">
           <div>
-            <img src={logoPlain.url} alt="Maie Ibarra" className="h-20 w-auto -ml-3" />
+            <img src={logoPlain} alt="Maie Ibarra" className="h-20 w-auto -ml-3" />
             <p className="mt-4 max-w-xs text-sm text-foreground/70 leading-relaxed">{t("footer.tagline")}</p>
             <div className="flex gap-3 mt-6">
               <a href={INSTAGRAM} target="_blank" rel="noreferrer" className="w-11 h-11 rounded-full glass-lavender flex items-center justify-center hover:scale-110 transition-transform">
