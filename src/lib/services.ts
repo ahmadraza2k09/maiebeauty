@@ -7,6 +7,8 @@ import lightVolume from "@/assets/light-volume.jpg.asset.json";
 import volume from "@/assets/volumen-new.jpg.asset.json";
 import wetEffect from "@/assets/wet-effect-new.jpg.asset.json";
 import browLam from "@/assets/brow-lamination.jpg.asset.json";
+import classicLashes from "@/assets/classic-lashes.jpg.asset.json";
+import hybridsLashes from "@/assets/hybrids-lashes.jpg.asset.json";
 
 
 export type ServiceCategory = "nails" | "pedicure" | "lashes" | "brows";
@@ -77,7 +79,7 @@ export const services: Service[] = [
     name: { es: "Classic Lashes", en: "Classic Lashes" },
     description: { es: "Una extensión por pestaña, efecto natural y elegante.", en: "One extension per lash, natural and elegant effect." },
     price: 80,
-    image: lightVolume.url,
+    image: classicLashes.url,
     variants: [
       { label: { es: "Aplicación", en: "Full set" }, price: 80 },
       { label: { es: "Relleno 2 semanas", en: "Fill 2 weeks" }, price: 40 },
@@ -90,7 +92,7 @@ export const services: Service[] = [
     name: { es: "Hybrid Lashes", en: "Hybrid Lashes" },
     description: { es: "Mezcla de classic y volumen para densidad balanceada.", en: "Mix of classic and volume for balanced density." },
     price: 100,
-    image: volume.url,
+    image: hybridsLashes.url,
     variants: [
       { label: { es: "Aplicación", en: "Full set" }, price: 100 },
       { label: { es: "Relleno 2 semanas", en: "Fill 2 weeks" }, price: 50 },
