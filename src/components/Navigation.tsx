@@ -27,6 +27,10 @@ export function Navigation() {
   }, []);
 
   useEffect(() => { setOpen(false); }, [location.pathname]);
+  useEffect(() => {
+    // Ensure we start at the top when navigating between routes
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [location.pathname]);
 
   return (
     <motion.header

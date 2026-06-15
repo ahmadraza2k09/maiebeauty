@@ -55,7 +55,8 @@ export const services: Service[] = [
     name: { es: "Diseños", en: "Nail Art" },
     description: { es: "Desde básicos hasta arte editorial sobre tus uñas.", en: "From basic to editorial art on your nails." },
     price: 10,
-    image: nailsHorror,
+    // Use a distinct image for Nail Art so it doesn't duplicate Dual System
+    image: nailsGold,
     variants: [
       { label: { es: "Básico", en: "Basic" }, price: "10–15" },
       { label: { es: "Medio", en: "Medium" }, price: "20–25" },
