@@ -51,7 +51,7 @@ export function Footer() {
         </div>
         <div className="mt-16 pt-8 border-t border-foreground/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-foreground/50">
           <span>© {new Date().getFullYear()} Maie Ibarra. {t("footer.rights")}</span>
-          <span className="font-display italic text-base text-primary/80">Crafted with intention.</span>
+          <span className="font-display text-base text-foreground">Designed by Mazhar Creative Agency</span>
         </div>
       </div>
     </footer>

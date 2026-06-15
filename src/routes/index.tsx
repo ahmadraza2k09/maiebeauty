@@ -8,6 +8,7 @@ import nailsGold from "@/assets/nails-gold.jpg.asset.json";
 import volume from "@/assets/volume.jpg.asset.json";
 import wetEffect from "@/assets/wet-effect.jpg.asset.json";
 import lashLift from "@/assets/lash-lift.jpg.asset.json";
+import whyMaiePortrait from "@/assets/why-maie-portrait.jpg.asset.json";
 import { Plus, Minus, Star, Sparkles, ShieldCheck, Heart, Clock } from "lucide-react";
 
 export const Route = createFileRoute("/")({ component: Home });
@@ -99,26 +100,6 @@ function Home() {
               className="absolute bottom-0 left-0 w-56 lg:w-72 aspect-[3/4] rounded-[2rem] overflow-hidden shadow-luxury skeu-card p-2 animate-float"
             >
               <img src={nailsGold.url} alt="Luxury nails" className="w-full h-full object-cover rounded-[1.7rem]" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.85 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.2, delay: 0.8 }}
-              className="absolute top-[42%] left-[22%] w-40 lg:w-48 aspect-square rounded-full overflow-hidden shadow-luxury border-4 border-white hidden md:block"
-            >
-              <img src={wetEffect.url} alt="Wet effect" className="w-full h-full object-cover" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1 }}
-              className="absolute bottom-6 right-2 glass-lavender rounded-2xl px-4 py-3 shadow-luxury max-w-[180px]"
-            >
-              <div className="flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-primary" />
-                <div className="text-[10px] uppercase tracking-widest text-primary">{lang === "es" ? "Hoy disponible" : "Today open"}</div>
-              </div>
-              <div className="font-display text-sm mt-1">{lang === "es" ? "3 horarios premium" : "3 premium slots"}</div>
             </motion.div>
           </motion.div>
         </motion.div>
@@ -224,7 +205,7 @@ function Home() {
           <div className="lg:col-span-5 relative h-[460px]">
             <Reveal>
               <div className="absolute inset-0 skeu-card rounded-[2.5rem] p-3 rotate-[-3deg]">
-                <img src={lashLift.url} alt="Lash detail" className="w-full h-full object-cover rounded-[2rem]" />
+                <img src={whyMaiePortrait.url} alt="Maie Ibarra" className="w-full h-full object-cover rounded-[2rem]" />
               </div>
             </Reveal>
             <Sparkle className="absolute -top-4 -right-4" size={40} />
