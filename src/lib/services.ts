@@ -1,6 +1,7 @@
 import nailsHorror from "@/assets/nails-horror.jpg";
 import nailsFloral from "@/assets/nails-floral.jpg";
 import nailsGold from "@/assets/nails-gold.jpg";
+import nailArtImg from "../../assets/nail-art.jfif";
 import pedicure from "@/assets/pedicure.jpg";
 import lashLift from "@/assets/lash-lift.jpg";
 import lightVolume from "@/assets/light-volume.jpg";
@@ -55,8 +56,7 @@ export const services: Service[] = [
     name: { es: "Diseños", en: "Nail Art" },
     description: { es: "Desde básicos hasta arte editorial sobre tus uñas.", en: "From basic to editorial art on your nails." },
     price: 10,
-    // Use a distinct image for Nail Art so it doesn't duplicate Dual System
-    image: nailsGold,
+    image: nailArtImg,
     variants: [
       { label: { es: "Básico", en: "Basic" }, price: "10–15" },
       { label: { es: "Medio", en: "Medium" }, price: "20–25" },

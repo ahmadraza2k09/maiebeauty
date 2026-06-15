@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useLang } from "@/lib/i18n";
 import { FloatingOrbs, Reveal, SectionEyebrow, Sparkle } from "@/components/Luxe";
 import portrait from "@/assets/about-maie-final.jpg";
+import logoPlain from "@/assets/logo-plain.png";
 
 export const Route = createFileRoute("/about")({
   head: () => ({ meta: [{ title: "Sobre Mi · Maie Ibarra" }] }),
@@ -60,6 +61,7 @@ function About() {
             <div className="mt-6 font-display italic text-2xl sm:text-3xl text-primary">
               Maie Ibarra
             </div>
+            <img src={logoPlain} alt="Maie logo" className="mx-auto mt-4 h-12 w-auto opacity-95" />
           </div>
         </Reveal>
       </div>

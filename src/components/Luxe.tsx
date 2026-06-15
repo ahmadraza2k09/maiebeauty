@@ -1,22 +1,55 @@
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
+import { useEffect, useState } from "react";
 
 export function FloatingOrbs() {
+  const [play, setPlay] = useState(true);
+
+  useEffect(() => {
+    const check = () => {
+      const active = document.activeElement;
+      const isInput = !!(active && (active.tagName === "INPUT" || active.tagName === "TEXTAREA" || (active as HTMLElement).isContentEditable));
+      setPlay(!document.hidden && !isInput);
+    };
+
+    const onFocusIn = () => { check(); };
+    const onFocusOut = () => { setTimeout(check, 0); };
+    const onVisibility = () => { check(); };
+
+    window.addEventListener("focusin", onFocusIn);
+    window.addEventListener("focusout", onFocusOut);
+    document.addEventListener("visibilitychange", onVisibility);
+    check();
+    return () => {
+      window.removeEventListener("focusin", onFocusIn);
+      window.removeEventListener("focusout", onFocusOut);
+      document.removeEventListener("visibilitychange", onVisibility);
+    };
+  }, []);
+
+  const a1 = play ? { y: [0, -30, 0], x: [0, 20, 0] } : { y: 0, x: 0 };
+  const a2 = play ? { y: [0, 30, 0], x: [0, -20, 0] } : { y: 0, x: 0 };
+  const a3 = play ? { y: [0, -20, 0] } : { y: 0 };
+
+  const t1 = play ? { duration: 14, repeat: Infinity, ease: "easeInOut" } : { duration: 0 };
+  const t2 = play ? { duration: 18, repeat: Infinity, ease: "easeInOut" } : { duration: 0 };
+  const t3 = play ? { duration: 12, repeat: Infinity, ease: "easeInOut" } : { duration: 0 };
+
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden -z-10">
       <motion.div
-        animate={{ y: [0, -30, 0], x: [0, 20, 0] }}
-        transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
+        animate={a1}
+        transition={t1}
         className="absolute -top-20 -right-20 w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle,rgba(207,184,245,0.45),transparent_70%)]"
       />
       <motion.div
-        animate={{ y: [0, 30, 0], x: [0, -20, 0] }}
-        transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
+        animate={a2}
+        transition={t2}
         className="absolute top-1/3 -left-32 w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(176,148,229,0.35),transparent_70%)]"
       />
       <motion.div
-        animate={{ y: [0, -20, 0] }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+        animate={a3}
+        transition={t3}
         className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle,rgba(243,237,255,0.7),transparent_70%)]"
       />
     </div>

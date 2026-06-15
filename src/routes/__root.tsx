@@ -79,6 +79,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: ReactNode }) {
+  // When rendering on the client, do not output <html>/<head>/<body>
+  // to avoid nesting them inside the existing document root element.
+  if (typeof document !== "undefined") {
+    return (
+      <>
+        <HeadContent />
+        {children}
+        <Scripts />
+      </>
+    );
+  }
+
   return (
     <html lang="es">
       <head><HeadContent /></head>

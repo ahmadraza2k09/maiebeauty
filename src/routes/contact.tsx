@@ -90,11 +90,12 @@ function Contact() {
           </Reveal>
 
           <Reveal delay={0.15}>
-            <form onSubmit={submit} className="skeu-card rounded-[2rem] p-8 space-y-5">
+            <form onSubmit={submit} className="skeu-card rounded-[2rem] p-8 space-y-5 pointer-events-auto relative z-10">
               {(["name","phone","email"] as const).map((f) => (
                 <div key={f}>
                   <label className="block text-[10px] uppercase tracking-[0.3em] text-foreground/60 mb-2">{t(`contact.form.${f}`)}</label>
                   <input
+                    autoFocus={f === "name"}
                     type={f === "email" ? "email" : "text"}
                     value={form[f]}
                     onChange={(e) => setForm({ ...form, [f]: e.target.value })}
@@ -114,7 +115,7 @@ function Contact() {
               </div>
               {err && <p className="text-sm text-destructive">{err}</p>}
               {sent && <motion.p initial={{opacity:0}} animate={{opacity:1}} className="text-sm text-primary">{t("contact.form.success")}</motion.p>}
-              <motion.button whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }} type="submit" className="w-full rounded-full gradient-primary text-white py-4 text-sm uppercase tracking-[0.3em] shadow-luxury">
+              <motion.button whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }} type="button" onClick={submit} className="w-full rounded-full gradient-primary text-white py-4 text-sm uppercase tracking-[0.3em] shadow-luxury">
                 {t("contact.form.send")}
               </motion.button>
             </form>
