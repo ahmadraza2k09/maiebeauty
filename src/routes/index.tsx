@@ -205,7 +205,7 @@ function Home() {
           <div className="lg:col-span-5 relative h-[460px]">
             <Reveal>
               <div className="absolute inset-0 skeu-card rounded-[2.5rem] p-3 rotate-[-3deg]">
-                <img src={lashLift.url} alt="Lash detail" className="w-full h-full object-cover rounded-[2rem]" />
+                <img src={whyMaiePortrait.url} alt="Maie Ibarra" className="w-full h-full object-cover rounded-[2rem]" />
               </div>
             </Reveal>
             <Sparkle className="absolute -top-4 -right-4" size={40} />
