@@ -12,4 +12,18 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/sitemap.xml", "/robots.txt"],
+      ignore: ["/admin"],
+    },
+    minify: true,
+  },
+  vite: {
+    build: {
+      // Increase chunk size warning limit for this project
+      chunkSizeWarningLimit: 600,
+    },
+  },
 });
