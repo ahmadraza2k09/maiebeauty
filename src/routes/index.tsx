@@ -8,6 +8,7 @@ import nailsGold from "@/assets/nails-gold.jpg.asset.json";
 import volume from "@/assets/volume.jpg.asset.json";
 import wetEffect from "@/assets/wet-effect.jpg.asset.json";
 import lashLift from "@/assets/lash-lift.jpg.asset.json";
+import whyMaiePortrait from "@/assets/why-maie-portrait.jpg.asset.json";
 import { Plus, Minus, Star, Sparkles, ShieldCheck, Heart, Clock } from "lucide-react";
 
 export const Route = createFileRoute("/")({ component: Home });
