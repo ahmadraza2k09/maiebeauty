@@ -101,26 +101,6 @@ function Home() {
             >
               <img src={nailsGold.url} alt="Luxury nails" className="w-full h-full object-cover rounded-[1.7rem]" />
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.85 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.2, delay: 0.8 }}
-              className="absolute top-[42%] left-[22%] w-40 lg:w-48 aspect-square rounded-full overflow-hidden shadow-luxury border-4 border-white hidden md:block"
-            >
-              <img src={wetEffect.url} alt="Wet effect" className="w-full h-full object-cover" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1 }}
-              className="absolute bottom-6 right-2 glass-lavender rounded-2xl px-4 py-3 shadow-luxury max-w-[180px]"
-            >
-              <div className="flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-primary" />
-                <div className="text-[10px] uppercase tracking-widest text-primary">{lang === "es" ? "Hoy disponible" : "Today open"}</div>
-              </div>
-              <div className="font-display text-sm mt-1">{lang === "es" ? "3 horarios premium" : "3 premium slots"}</div>
-            </motion.div>
           </motion.div>
         </motion.div>
       </section>
