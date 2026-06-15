@@ -263,7 +263,8 @@ function Calendar({ selected, onSelect, lang }: { selected: Date | null; onSelec
       <div className="grid grid-cols-7 gap-1">
         {cells.map((d, i) => {
           if (!d) return <div key={i} />;
-          const disabled = d < today || d.getDay() === 0 || d.getDay() === 6; // only Monday-Friday
+          const blocked = d.getFullYear() === 2026 && d.getMonth() === 6 && d.getDate() >= 18 && d.getDate() <= 26;
+          const disabled = d < today || d.getDay() === 0 || d.getDay() === 6 || blocked; // only Monday-Friday plus blocked dates
 
           const active = selected && d.toDateString() === selected.toDateString();
           return (
